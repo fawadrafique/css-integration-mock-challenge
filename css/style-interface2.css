@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    margin: 2% 35% 2% 35%;
+    width: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #468df1;
+    color: #dae7fc;
+    border-radius: 3.5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "active-users active-users active-users active-users active-users active-users"
+    "views views views views views views"
+    "graph graph graph graph graph graph"
+    "pages pages pages pages pages pages-users"
+    "report report report report report report";
+    padding: 30px 40px 20px 40px;
+}
+h4{
+    font-size: 24px;
+    line-height: 1.7em;
+}
+h1{
+    font: 72px normal;
+    margin-bottom: 25px;
+}
+h5 {
+    margin-bottom: 3px;
+}
+p{
+    font: 16px 'Merriweather', serif;
+    letter-spacing: 1px;
+    line-height: 1.8em;
+    text-indent: .5em;
+}
+.border{
+    border-bottom: 1px solid #dae7fc;
+
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.active-users{
+    grid-area: active-users;
+}
+
+.views {
+    grid-area: views;
+    border-bottom: 1px solid #dae7fc;
+
+
+}
+.graph {
+    grid-area: graph;
+}
+
+.pages {
+    grid-area: pages;
+    margin-bottom: 25px;
+
+
+}
+.pages-users {
+    grid-area: pages-users;
+    text-align: end;
+       margin-bottom: 25px;
+
+}
+
+.report {
+    grid-area: report;
+    text-align: end;
+    padding-top: 20px;
+    border-top: 1px solid #dae7fc;
+    margin-bottom: 0;
+}
+
+
+@media (max-width: 480px){
+    .main{
+        font-size: 1em;
+        margin: 2% 15% 2% 15%;
+        width: auto;
+    }
+    h4, h5, h3, p{
+        font-size: .8em;
+    }
+    h1{
+        font-size: 3em; 
+    }
+}
+@media (min-width: 480px) and (max-width: 1024px){
+    .main{
+        margin: 2% 25% 2% 25%;
+        width: auto;
+    }
+}
