@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    margin: 5% 15% 5% 15%;
+    width: auto;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fe8a71;
+    color: #f6cd61;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "head"
+    "interface1"
+    "interface2"
+    "interface3";
+}
+a {
+    text-decoration: none;
+    color: #f6cd61;
+}
+a:hover{
+    color: #fe8a71;
+}
+.head{
+    grid-area: head;
+    text-align: center;
+    margin: 10px;
+}
+.interface1{
+    grid-area: interface1;
+    background-color: #3da4ab;
+    border: 5px solid #0e9aa7;
+    border-radius: 5px;
+    margin: 10px;
+}
+.interface2{
+    grid-area: interface2;
+    background-color: #3da4ab;
+    border: 5px solid #0e9aa7;
+    border-radius: 5px;
+    margin: 10px;
+}
+.interface3{
+    grid-area: interface3;
+    background-color: #3da4ab;
+    border: 5px solid #0e9aa7;
+    border-radius: 5px;
+    margin: 10px;
+}
+@media (min-width: 736px){
+    .main{
+        margin: 5% 25% 5% 25%;
+        width: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "head head head"
+        "interface1 interface2 interface3"
+    }
+}
