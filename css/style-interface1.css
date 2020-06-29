@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #ffffff;
+    color: #949494;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "grunt grunt grunt grunt grunt grunt"
+    "gulp gulp gulp gulp gulp gulp"
+    "git git git git git git"
+    "scripts scripts scripts scripts scripts scripts";
+    grid-gap: 10px;
+    padding: 10px;
+}
+h2{
+    color: #86c29a;
+    font: 24px 'Roboto Mono', monospace, Arial, Helvetica, sans-serif;
+    line-height: 1.7em;
+}
+p{
+    font: 16px 'Merriweather', serif;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.grunt{
+    grid-area: grunt;
+
+}
+
+.gulp {
+    grid-area: gulp;
+
+}
+
+.git {
+    grid-area: git;
+
+}
+
+.scripts {
+    grid-area: scripts;
+
+}
+
+@media (min-width: 480px){
+    body{
+        font-size: 1.5em;
+        width: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "grunt grunt gulp gulp"
+        "git git scripts scripts";
+        grid-gap: 10px;
+    }
+}
+@media (min-width: 1024px){
+    body{
+        font-size: 1.7em;
+        width: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        ". grunt grunt gulp gulp git git scripts scripts";
+        grid-gap: 10px;
+    }
+}
