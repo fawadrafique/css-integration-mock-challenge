@@ -7,7 +7,7 @@
     margin: 5% 15% 5% 15%;
     width: auto;
     border-radius: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Mono', monospace, Arial, Helvetica, sans-serif;
     background-color: #fe8a71;
     color: #f6cd61;
     display: grid;
@@ -25,6 +25,9 @@ a {
 }
 a:hover{
     color: #fe8a71;
+}
+h3{
+    font-family: 'Roboto Mono', monospace, Arial, Helvetica, sans-serif;
 }
 .head{
     grid-area: head;
