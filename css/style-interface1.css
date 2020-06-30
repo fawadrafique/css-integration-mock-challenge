@@ -20,11 +20,11 @@ body{
 }
 h2{
     color: #86c29a;
-    font: 24px 'Roboto Mono', monospace, Arial, Helvetica, sans-serif;
+    font: 24px 'Fira Sans', sans-serif;
     line-height: 1.7em;
 }
 p{
-    font: 16px 'Merriweather', serif;
+    font: 16px 'Fira Sans', sans-serif;
     letter-spacing: 1px;
     line-height: 1.5em;
 }
